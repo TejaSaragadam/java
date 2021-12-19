@@ -1,7 +1,13 @@
 class RnaTranscription {
 
     String transcribe(String dnaStrand) {
-        throw new UnsupportedOperationException("Delete this statement and write your own implementation.");
+        Map<String, String> transcriptor = new HashMap<>();
+        transciptor.put('G', 'C');
+        transciptor.put('C', 'G');
+        transciptor.put('T', 'A');
+        transciptor.put('A', 'U');
+        
+        dnaStrand.split('').forEach(str-> System.out.print(transcriptor.get(str)));
     }
 
 }
